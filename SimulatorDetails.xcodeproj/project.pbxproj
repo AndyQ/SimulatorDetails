@@ -12,6 +12,7 @@
 		A1E15D221A0BA7070089516D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E15D211A0BA7070089516D /* Images.xcassets */; };
 		A1E15D251A0BA7070089516D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E15D231A0BA7070089516D /* Main.storyboard */; };
 		A1E15D311A0BA7070089516D /* SimulatorDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E15D301A0BA7070089516D /* SimulatorDetailsTests.swift */; };
+		A1E15D3B1A0BABCB0089516D /* SimDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E15D3A1A0BABCB0089516D /* SimDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		A1E15D2A1A0BA7070089516D /* SimulatorDetailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulatorDetailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E15D2F1A0BA7070089516D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1E15D301A0BA7070089516D /* SimulatorDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorDetailsTests.swift; sourceTree = "<group>"; };
+		A1E15D3A1A0BABCB0089516D /* SimDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				A1E15D1D1A0BA7070089516D /* AppDelegate.swift */,
 				A1E15D1F1A0BA7070089516D /* ViewController.swift */,
+				A1E15D3A1A0BABCB0089516D /* SimDataManager.swift */,
 				A1E15D211A0BA7070089516D /* Images.xcassets */,
 				A1E15D231A0BA7070089516D /* Main.storyboard */,
 				A1E15D1B1A0BA7070089516D /* Supporting Files */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E15D201A0BA7070089516D /* ViewController.swift in Sources */,
+				A1E15D3B1A0BABCB0089516D /* SimDataManager.swift in Sources */,
 				A1E15D1E1A0BA7070089516D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +401,7 @@
 				A1E15D361A0BA7070089516D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1E15D371A0BA7070089516D /* Build configuration list for PBXNativeTarget "SimulatorDetailsTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +410,7 @@
 				A1E15D391A0BA7070089516D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
