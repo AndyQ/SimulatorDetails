@@ -136,7 +136,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         else
         {
             newString = appList[row]
-            newString = "MyApp \(row)"
         }
         return newString;
     }
