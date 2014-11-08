@@ -57,7 +57,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     var selectedIOSVersion : String?
     var selectedIOSSimulator : Simulator?
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

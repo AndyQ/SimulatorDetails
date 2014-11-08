@@ -38,12 +38,36 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        
     }
 
+    func applicationDidBecomeActive(notification: NSNotification) {
+        applicationController = NSApplication.sharedApplication().mainWindow!.windowController()! as? NSWindowController
+    }
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
 
+    func applicationShouldTerminateAfterLastWindowClosed(app: NSApplication) -> Bool { return false }
+    
+    var applicationController: NSWindowController?
+    @IBAction func showApplication(sender : AnyObject)
+    {
+        if applicationController == nil
+        {
+            if let storyboard = NSStoryboard(name: "Main", bundle: nil)
+            {
+                applicationController = storyboard.instantiateInitialController() as? NSWindowController
+                if let window = applicationController?.window {
+                    window.titlebarAppearsTransparent = true
+                    window.titleVisibility = NSWindowTitleVisibility.Hidden
+                    window.styleMask |= NSFullSizeContentViewWindowMask
+                }
+            }
+            
+        }
+        if applicationController != nil { applicationController!.showWindow(sender) }
+    }
 
 }
 
