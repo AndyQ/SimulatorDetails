@@ -773,7 +773,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Nc1-9a-tZE"/>
                                 </constraints>
-                                <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" id="bVI-pS-no7">
+                                <textFieldCell key="cell" lineBreakMode="charWrapping" selectable="YES" sendsActionOnEndEditing="YES" id="bVI-pS-no7">
                                     <font key="font" metaFont="smallSystem"/>
                                     <string key="title">App Binary
  location</string>
@@ -791,7 +791,7 @@
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bT7-Kt-aZj">
                                 <rect key="frame" x="18" y="14" width="546" height="36"/>
-                                <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" title="App Documents location" id="x0Z-vK-MQy">
+                                <textFieldCell key="cell" lineBreakMode="charWrapping" selectable="YES" sendsActionOnEndEditing="YES" title="App Documents location" id="x0Z-vK-MQy">
                                     <font key="font" metaFont="smallSystem"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>

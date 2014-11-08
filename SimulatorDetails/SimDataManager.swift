@@ -76,14 +76,15 @@ class Simulator : Printable
             for appDir in appDirs
             {
                 var appFolder = simAppsDir.stringByAppendingPathComponent(appDir)
-                var files = fm.contentsOfDirectoryAtPath( appFolder, error: nil )
-                
-                for file in files! as [String]
+                if let files = fm.contentsOfDirectoryAtPath( appFolder, error: nil ) as? [String]
                 {
-                    if ( file.hasSuffix(".app" ) )
+                    for file in files
                     {
-                        let appName = file.stringByDeletingPathExtension
-                        apps.append(appName)
+                        if ( file.hasSuffix(".app" ) )
+                        {
+                            let appName = file.stringByDeletingPathExtension
+                            apps.append(appName)
+                        }
                     }
                 }
             }

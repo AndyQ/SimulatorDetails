@@ -130,8 +130,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         var newString : String?
         if ( tableView == simulatorTableView )
         {
+            var sim = simDataManager.simulators[selectedIOSVersion!]![row]
+            var apps = sim.getListOfApps()
             
-            newString = simDataManager.simulators[selectedIOSVersion!]![row].deviceName
+            newString = "\(sim.deviceName)  (\(apps.count))"
         }
         else
         {
